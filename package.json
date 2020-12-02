@@ -2,11 +2,21 @@
   "name": "react-native-snack-provider",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8.x",
+    "react-native": "^0.6x.x",
+    "react-native-vector-icons": "^7.x"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.63.37"
+  }
 }
